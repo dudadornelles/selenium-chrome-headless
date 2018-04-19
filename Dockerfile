@@ -17,6 +17,7 @@ RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.d
   libx11-xcb1 \
   libxss1 \
   lsb-release  \
-  xdg-utils && \
+  xdg-utils \
+  openjdk-7-jdk && \
   dpkg -i google-chrome-stable_current_amd64.deb && \
   rm -rf /var/lib/apt/lists/* /var/apt/cache/* /tmp/*
